@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CodePride</title>
+	<meta name="Founder" content="Kayla Byrd">
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="images">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		h2{
+			text-align: center;
+		}
+	</style>
+</head>
+<body class="external-style-body">
+	<header><h1 class="h1">CodePride</h1>
+		<h2>Login or Create Profile</h2>
+		<nav><!-- Navigation Bar --> <!-- This is the navigation bar across all pages and contains link to other pages of the website.-->
+			<table class="external-nav-table">
+				<tr>
+					<td class="external-nav-td"><a href="index.html">Home</a></td>
+					<td class="external-nav-td"><a href="about.html">About Us</a></td>
+					<td class="external-nav-td"><a href="contact.html">Contact Us</a></td>
+					<td class="external-nav-td"><a href="login.html">Login/Create Profile</a></td>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<main>
+	<img src="images/user.jpg" alt="user" width="200" height="200"><!--User logo-->
+	<div class="form-container">
+		<form action="/login" method="POST">
+			<div class="username">
+				<label for="username"><b>Username:</b></label>
+				<input type="text" id="username" name="username" required>
+			</div>
+			<div class="password">
+				<label for="password"><b>Password:</b></label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<button type="submit" class="button">Submit</button><!--"Submit" button-->
+		</form>
+		<br>
+		<form action="/create-profile" method="GET">
+			<button type="submit" class="button create-profile">Create Profile</button> <!--"Create Profile" button-->
+		</form>
+	</div>
+</main>
+<footer><!-- The footer contains the copyright information and validation links-->
+	<p>&copy; 2024 CodePride. All rights reserved.</p><br>
+		<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a><br>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+</footer>
